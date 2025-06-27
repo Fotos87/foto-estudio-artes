@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços de Fotografia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header, section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #444;
+    }
+    .service {
+      background: white;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .service a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .contact, .gallery {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .contact a, .footer a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Serviços de Fotografia</h1>
+    <p>Profissionalismo, criatividade e qualidade em cada clique.</p>
+  </header>
+
+  <section class="service">
+    <h2>📸 Fotografia de Eventos Diurnos</h2>
+    <p>Capture os momentos especiais à luz do dia! Ideal para casamentos, aniversários, feiras e eventos corporativos.</p>
+    <ul>
+      <li>Luz natural e cores vibrantes.</li>
+      <li>Enfoque em espontaneidade e emoção.</li>
+      <li>Cobertura completa com olhar sensível aos detalhes.</li>
+    </ul>
+    <a href="#contato">Solicite um orçamento para seu evento</a>
+  </section>
+
+  <section class="service">
+    <h2>👨‍👩‍👧‍👦 Retratos de Família</h2>
+    <p>Registre o carinho e a união da sua família com fotos que se tornam lembranças para a vida toda.</p>
+    <ul>
+      <li>Sessões em estúdio ou em ambientes externos.</li>
+      <li>Poses espontâneas ou dirigidas.</li>
+      <li>Ideal para datas comemorativas, presentes e registros atemporais.</li>
+    </ul>
+    <a href="#contato">Agende sua sessão de família</a>
+  </section>
+
+  <section class="service">
+    <h2>🛍️ Fotografia de Produto</h2>
+    <p>Destaque o melhor do seu produto com imagens que vendem.</p>
+    <ul>
+      <li>Fotos com fundo neutro ou ambientadas.</li>
+      <li>Foco em cores, textura e detalhes.</li>
+      <li>Perfeito para e-commerce, catálogos e redes sociais.</li>
+    </ul>
+    <a href="#portfolio-produto">Veja exemplos e contrate</a>
+  </section>
+
+  <section class="service">
+    <h2>🏢 Fotos Corporativas</h2>
+    <p>Imagens profissionais para fortalecer a presença da sua empresa.</p>
+    <ul>
+      <li>Sessões em escritórios ou estúdio.</li>
+      <li>Retratos de equipe e ambientes de trabalho.</li>
+      <li>Uso ideal para websites, apresentações, redes sociais e mídia institucional.</li>
+    </ul>
+    <a href="#contato">Solicite um ensaio corporativo</a>
+  </section>
+
+  <section class="service">
+    <h2>🎯 Headshots Profissionais</h2>
+    <p>Transmita confiança e profissionalismo com um retrato de impacto.</p>
+    <ul>
+      <li>Ideal para perfis em LinkedIn, currículos, atores e modelos.</li>
+      <li>Estilo limpo, expressivo e focado no rosto.</li>
+      <li>Sessões rápidas com excelente acabamento.</li>
+    </ul>
+    <a href="#headshots">Reserve seu headshot</a>
+  </section>
+
+  <section class="gallery">
+    <h2>📷 Galeria de Fotos</h2>
+    <div class="gallery-grid">
+      <img src="https://via.placeholder.com/300x200?text=Evento" alt="Evento">
+      <img src="https://via.placeholder.com/300x200?text=Fam%C3%ADlia" alt="Família">
+      <img src="https://via.placeholder.com/300x200?text=Produto" alt="Produto">
+      <img src="https://via.placeholder.com/300x200?text=Corporativo" alt="Corporativo">
+      <img src="https://via.placeholder.com/300x200?text=Headshot" alt="Headshot">
+    </div>
+  </section>
+
+  <section class="contact" id="contato">
+    <h2>Entre em Contato</h2>
+    <form action="https://formspree.io/f/SEU_FORM_ID" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+    <p>📧 <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a> | 📞 (00) 00000-0000</p>
+  </section>
+
+  <footer class="footer">
+    <p>Siga nas redes sociais:</p>
+    <p>
+      <a href="https://instagram.com/seuperfil" target="_blank">Instagram</a> |
+      <a href="https://wa.me/5500000000000" target="_blank">WhatsApp</a>
+    </p>
+    <p>&copy; 2025 Seu Nome - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
